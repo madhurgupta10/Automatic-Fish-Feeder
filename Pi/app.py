@@ -10,5 +10,3 @@ while True:
     if (result['action'] == True):
         FishFeeder().FeedNow(0, 90)
         firebase.put(url, {'action': False})
-    else:
-        FishFeeder().Cancel()
