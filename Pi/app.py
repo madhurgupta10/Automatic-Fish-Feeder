@@ -1,3 +1,3 @@
 from fishfeeder import FishFeeder
 
-FishFeeder().FeedNow(2)
+FishFeeder().FeedNow(0.3, 180)

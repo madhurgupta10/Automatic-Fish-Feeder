@@ -15,14 +15,14 @@ class FishFeeder():
         duty = angle / 18 + 2
         GPIO.output(3, True)
         pwm.ChangeDutyCycle(duty)
-        sleep(1)
+        sleep(0.5)
         GPIO.output(3, False)
         pwm.ChangeDutyCycle(0)
 
-    def FeedNow(self, duration):
-        FishFeeder().SetAngle(180)
-        sleep(duration)
+    def FeedNow(self, duration, angle):
         FishFeeder().SetAngle(0)
+        sleep(duration)
+        FishFeeder().SetAngle(angle)
     
     def Cancel(self):
         pwm.stop()
