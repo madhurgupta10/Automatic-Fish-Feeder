@@ -20,9 +20,9 @@ class FishFeeder():
         pwm.ChangeDutyCycle(0)
 
     def FeedNow(self, duration, angle):
-        FishFeeder().SetAngle(0)
-        sleep(duration)
         FishFeeder().SetAngle(angle)
+        sleep(duration)
+        FishFeeder().SetAngle(180)
     
     def Cancel(self):
         pwm.stop()
