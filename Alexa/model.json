@@ -1,0 +1,38 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "fish feeder",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FeedNow",
+                    "slots": [],
+                    "samples": [
+                        "feed the fish",
+                        "feed fish",
+                        "feed my fish right now",
+                        "feed my fish please",
+                        "please feed the fish",
+                        "fish my feed now"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
